@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main id="main-container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your Name" />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Enter your Email" />
+        <label for="age" id="number-label">Age(Optional)</label>
+        <input type="number" id="number" placeholder="Age" min="1" max="99" />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select name="current Role" id="dropdown">
+          <option value="Select the role" selected disabled>Select the current role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer no to say">Prefer no to say</option>
+          <option value="Other">Other</option>
+        </select>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="recommend">
+          <input type="radio" name="recommend" value="Definitely"/>Definitely<br>
+          <input type="radio" name="recommend" value="Maybe"/>Maybe<br>
+          <input type="radio" name="recommend" value="Not Sure"/>Not Sure<br>
+        </label>
+        <label for="dropdown-2"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select name="favouriteFeature" id="dropdown-2">
+          <option selected disabled>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="Projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+        <label for="projects">
+          What would you like to see improved? (Check all that apply)
+        </label>
+        <label for="projects-options">
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Front-end Projects"
+          />Front-end Projects<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Backend-end Projects"
+          />Backend-end Projects<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Data Visualization"
+          />Data Visualization<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Challenges"
+          />Challenges<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Open Source Community"
+          />Open Source Community<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Gitter Help Rooms"
+          />Gitter Help Rooms<br>
+          <input type="checkbox" name="project-options" value="Videos" />Videos<br>
+          <input type="checkbox" name="project-options" value="Wiki" />Wiki<br>
+          <input type="checkbox" name="project-options" value="Forum" />Forum<br>
+          <input
+            type="checkbox"
+            name="project-options"
+            value="Additional Courses"
+          />Additional Courses<br>
+        </label>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" rows="5"></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

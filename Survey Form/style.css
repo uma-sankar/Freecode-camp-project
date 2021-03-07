@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2C061F;
+}
+
+#main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+#survey-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; 
+  width: 50%;
+  padding: 75px;
+  margin: auto;
+  border-radius: 50px;
+  background-color: #374045;
+  font-family: inherit;
+}
+input[type="text"],input[type="email"],input[type="number"],select,button{
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  padding: 5px 10px;
+}
+label{
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-family: inherit;
+}
+textarea{
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 5px 10px;
+}
+input[type="checkbox"], input[type="radio"]{
+  width: 20px;
+  height: 20px;
+  padding: 5px 10px;
+  margin: 10px 5px;
+}
+button{
+  background-color: #D89216;
+  color: white;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  cursor: pointer;
+  border: 2px solid #2C061F;
+  transition: all 0.3s ease-in;
+}
+button:hover{
+  background-color:#2C061F;
+  border: 2px solid #D89216;
+}
+input:focus, button:focus, textarea:focus, select:focus{
+  outline: none;
+}
