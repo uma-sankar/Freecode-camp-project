@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+$primary-color-dark: #22223b;
+$secondary-color: #f2e9e4;
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  header {
+    width: 100%;
+    height: 3.5rem;
+    background-color: $primary-color-dark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    @media(max-width: 700px){
+     height: auto;
+    }
+    nav {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      @media(max-width: 700px){
+        height: auto;
+        justify-content: center;
+      }
+      .main-nav__items {
+        display: flex;
+        width: 40%;
+        align-items: center;
+        justify-content: space-around;
+        @media(max-width:700px){
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+       }
+
+        a {
+          color: white;
+          font-size: 1.2rem;
+          padding: 5px;
+          border-bottom: 3px solid transparent;
+          transition: border-bottom 0.2s linear;
+          display: inline-block;
+          @media(max-width:700px){
+            margin: 5px 0px;
+            border-bottom: 1px solid $secondary-color;
+          }
+          &:hover {
+            border-bottom: 3px solid $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  main {
+    background-color: #3d5a80;
+    position: relative;
+
+    #welcome-section {
+      height: 100vh;
+      background-color: $secondary-color;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 65%, 0 88%, 0 0);
+      .content {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media(max-width:700px){
+          width:100%;
+          clip-path: none;
+        }
+      
+        h1 {
+          color: #22223b;
+          font-size: 3rem;
+          padding: 20px 20px 5px;
+          margin-bottom: 0;
+          @media(max-width:700px){
+            font-size: 2rem;
+          }
+        }
+        p {
+          color: #22223b;
+          font-size: 1.5rem;
+          padding: 0px 20px 10px;
+          margin: 0;
+          margin-left: 200px;
+          @media(max-width:700px){
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .image {
+        width: 50%;
+        height: 100vh;
+        img {
+          width: 70%;
+          max-width: 100%;
+          height: 100vh;
+        }
+      }
+    }
+    .projects {
+      height: 600px;
+      width: 100%;
+      @media(max-width:700px){
+        height: auto;
+      }
+      h1.section-heading {
+        color: $secondary-color;
+        text-align: center;
+        font-size: 3rem;
+      }
+      .projectcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media(max-width:700px){
+          flex-direction: column;
+        }
+        .project-tile {
+          width: 40%;
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5),
+            3px 0px 5px rgba(0, 0, 0, 0.5);
+            @media(max-width:700px){
+              width: 80%;
+              margin: 10px 0px;
+            }
+          h1 {
+            text-align: center;
+            color: $secondary-color;
+          }
+          img {
+            width: 100%;
+            height: 350px;
+            cursor: pointer;
+           
+          }
+        }
+      }
+    }
+    .contact {
+      margin-top: 10px;
+      height: 350px;
+      background-color: $secondary-color;
+      padding: 40px;
+      @media(max-width:700px){
+        height: auto;
+      }
+      h1 {
+        font-size: 4rem;
+        color: $primary-color-dark;
+        text-align: center;
+        margin-top: 10px;
+        @media(max-width:700px){
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.3rem;
+        margin-top: 5px;
+        color: $primary-color-dark;
+        text-align: center;
+      }
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        a {
+          margin: 5px 15px;
+          font-size: 2rem;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

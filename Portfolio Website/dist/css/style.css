@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+body header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #22223b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+@media (max-width: 700px) {
+  body header {
+    height: auto;
+  }
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  body header nav {
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body header nav .main-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  body header nav .main-nav__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body header nav .main-nav__items a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 0.2s linear;
+  transition: border-bottom 0.2s linear;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  body header nav .main-nav__items a {
+    margin: 5px 0px;
+    border-bottom: 1px solid #f2e9e4;
+  }
+}
+
+body header nav .main-nav__items a:hover {
+  border-bottom: 3px solid #f2e9e4;
+}
+
+body main {
+  background-color: #3d5a80;
+  position: relative;
+}
+
+body main #welcome-section {
+  height: 100vh;
+  background-color: #f2e9e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 65%, 0 88%, 0 0);
+          clip-path: polygon(0 0, 100% 33%, 100% 100%, 0 65%, 0 88%, 0 0);
+}
+
+body main #welcome-section .content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 700px) {
+  body main #welcome-section .content {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+body main #welcome-section .content h1 {
+  color: #22223b;
+  font-size: 3rem;
+  padding: 20px 20px 5px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  body main #welcome-section .content h1 {
+    font-size: 2rem;
+  }
+}
+
+body main #welcome-section .content p {
+  color: #22223b;
+  font-size: 1.5rem;
+  padding: 0px 20px 10px;
+  margin: 0;
+  margin-left: 200px;
+}
+
+@media (max-width: 700px) {
+  body main #welcome-section .content p {
+    font-size: 0.8rem;
+  }
+}
+
+body main #welcome-section .image {
+  width: 50%;
+  height: 100vh;
+}
+
+body main #welcome-section .image img {
+  width: 70%;
+  max-width: 100%;
+  height: 100vh;
+}
+
+body main .projects {
+  height: 600px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  body main .projects {
+    height: auto;
+  }
+}
+
+body main .projects h1.section-heading {
+  color: #f2e9e4;
+  text-align: center;
+  font-size: 3rem;
+}
+
+body main .projects .projectcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 700px) {
+  body main .projects .projectcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body main .projects .projectcontainer .project-tile {
+  width: 40%;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5), 3px 0px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5), 3px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 700px) {
+  body main .projects .projectcontainer .project-tile {
+    width: 80%;
+    margin: 10px 0px;
+  }
+}
+
+body main .projects .projectcontainer .project-tile h1 {
+  text-align: center;
+  color: #f2e9e4;
+}
+
+body main .projects .projectcontainer .project-tile img {
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+
+body main .contact {
+  margin-top: 10px;
+  height: 350px;
+  background-color: #f2e9e4;
+  padding: 40px;
+}
+
+@media (max-width: 700px) {
+  body main .contact {
+    height: auto;
+  }
+}
+
+body main .contact h1 {
+  font-size: 4rem;
+  color: #22223b;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  body main .contact h1 {
+    font-size: 2rem;
+  }
+}
+
+body main .contact p {
+  font-size: 1.3rem;
+  margin-top: 5px;
+  color: #22223b;
+  text-align: center;
+}
+
+body main .contact .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+}
+
+body main .contact .link a {
+  margin: 5px 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
